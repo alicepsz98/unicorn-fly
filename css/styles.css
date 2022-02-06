@@ -40,7 +40,6 @@
   border: 2px solid #000;
 }
 .barrier .body {
-  height: 110px;
   width: 110px;
   background: linear-gradient(90deg, #639301, #a5e82e);
   border-left: 2px solid #000;
