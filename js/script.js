@@ -61,8 +61,8 @@ function Bird(gameHeight){
   this.element.src = 'assets/img/bird.png'
   this.getY = () => parseInt(this.element.style.bottom.split('px')[0])
   this.setY = y => this.element.style.bottom = `${y}px`
-  window.onmousedown = e => flying = true
-  window.onmouseup = e => flying = false
+  window.ontouchstart = e => flying = true
+  window.ontouchend = e => flying = false
   this.animate = () => {
       const newY = this.getY() + (flying ? 8 : -5)
       const heightMaxima = gameHeight - this.element.clientHeight
