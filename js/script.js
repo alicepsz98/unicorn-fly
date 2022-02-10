@@ -127,7 +127,7 @@ function FlappyBird() {
       if (collided(bird, barriers)) {
         clearInterval(temporizador);
         alert(`Parabéns, você perdeu! 
-${dots} pontos.
+Pontuação: ${dots}
 Jogar novamente?`);
         window.location.reload();
       }
