@@ -61,10 +61,12 @@ function Bird(gameHeight){
   this.element.src = 'assets/img/bird.png'
   this.getY = () => parseInt(this.element.style.bottom.split('px')[0])
   this.setY = y => this.element.style.bottom = `${y}px`
-  window.ontouchstart = e => flying = true
-  window.ontouchend = e => flying = false
+  // window.ontouchstart = e => flying = true
+  // window.ontouchend = e => flying = false
+  window.onkeydown = e => flying = true
+  window.onkeyup = e => flying = false
   this.animate = () => {
-      const newY = this.getY() + (flying ? 8 : -5)
+      const newY = this.getY() + (flying ? 5 : -4)
       const heightMaxima = gameHeight - this.element.clientHeight
       if(newY <= 0) {
           this.setY(0)
@@ -114,7 +116,7 @@ function FlappyBird(){
   const height = gameArea.clientHeight
   const width = gameArea.clientWidth
   const progress = new Progress()
-  const barriers = new Barriers(height, width, 200, 400, 
+  const barriers = new Barriers(height, width, 180, 380, 
       () => progress.updateDots(++dots))
   const bird = new Bird(height)
   gameArea.appendChild(progress.element)
@@ -125,9 +127,12 @@ function FlappyBird(){
           barriers.animate()
           bird.animate()
           if (collided(bird, barriers)) {
-              clearInterval(temporizador)
+            clearInterval(temporizador)
+            alert(`Parabéns, você perdeu!
+Jogar novamente?`)
+            window.location.reload();
           }
-      }, 20)
+      }, 15)
   }
 };
 

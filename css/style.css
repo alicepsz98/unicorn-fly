@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
 }
 
 @font-face {
@@ -8,19 +14,20 @@
 }
 
 [wm-flappy] {
-  position: relative; /** Area do jogo **/
-  border: 5px solid dodgerblue; /** Borda **/
-  height: 700px; /** Altura **/
-  width: 1200px; /** Largura **/
-  margin: 15px; /** Margem **/
-  background-color: deepskyblue; /** Cor do fundo **/
-  overflow: hidden; /** Fazer o que está fora da div não aparecer **/
+  position: relative; 
+  border: 5px solid dodgerblue; 
+  height: 95vh; 
+  width: 95vw; 
+  margin: 2.5vh auto 2.5vh auto;
+  background-image: url('https://image.freepik.com/vetores-gratis/ceu-abstrato-com-nuvens-de-cor-sol-e-nuvens-de-fundo-com-uma-cor-pastel-suave-fundo-de-paisagem-magica-de-fantasia-com-ceu-ensolarado-nublado-colorido-arco-iris-brilhante-realista-nuvem-fofa_209425-9.jpg?w=740'); 
+  background-size: cover;
+  overflow: hidden;
 }
+
 .bird {
   position: absolute;
-  width: 60px;
+  width: 50px;
   left: calc(50% - 30px);
-
 }
 
 .couple-barriers {
@@ -41,25 +48,27 @@
 .barrier .border {
   height: 30px;
   width: 130px;
-  background: linear-gradient(90deg, #639301, #a5e82e);
-  border: 2px solid #000;
+  background: linear-gradient(90deg, #cf024a 0%, hsl(339, 82%, 58%) 51%, #f38cae 100%);
+  border: 2px solid #000000ad;
+  border-radius: 6px;
 }
 
 .barrier .body {
   height: 150px;
   width: 110px;
-  background: linear-gradient(90deg, #639301, #a5e82e);
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+  background: linear-gradient(90deg, #fb1463 0%, #f682aa 51%, #f9c9d9 100%);
+  border-left: 2px solid #000000ad;
+  border-right: 2px solid #000000ad;
   
 }
 
 .progress {
   position: absolute;
   color: #FFF;
-  top: 10px;
-  right: 10px;
+  top: -10px;
+  left: 10px;
   font-family: Pixel;
   font-size: 70px;
   z-index: 100;
+  text-shadow: 3px 3px 3px black;
 }
