@@ -130,7 +130,7 @@ function FlappyBird(){
 Jogar novamente?`)
             window.location.reload();
           }
-      }, 20)
+      }, 10)
   }
 };
 
