@@ -5,29 +5,33 @@
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(90deg, #21102c 0%, #591983 50%, #7900c9 100%);
 }
 
 @font-face {
-  font-family: 'Pixel';
-  src: url('../assets/fonts/Pixel.ttf');
+  font-family: 'Gamer';
+  src: url('../assets/fonts/Gamer.ttf');
 }
 
 [wm-flappy] {
   position: relative; 
-  border: 5px solid dodgerblue; 
+  border: 3px solid #36004b; 
+  border-radius:10px;
   height: 78vh; 
-  width: 95vw; 
-  margin: 5vh auto 11vh auto;
+  width: 90vw; 
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url('https://image.freepik.com/vetores-gratis/ceu-abstrato-com-nuvens-de-cor-sol-e-nuvens-de-fundo-com-uma-cor-pastel-suave-fundo-de-paisagem-magica-de-fantasia-com-ceu-ensolarado-nublado-colorido-arco-iris-brilhante-realista-nuvem-fofa_209425-9.jpg?w=740'); 
   background-size: cover;
   overflow: hidden;
 }
 
-.bird {
+.unicornio {
   position: absolute;
   width: 50px;
   left: calc(50% - 30px);
+  filter: drop-shadow(1px 1px 2px #000000d2);
 }
 
 .couple-barriers {
@@ -46,8 +50,8 @@ body {
 }
 
 .barrier .border {
-  height: 30px;
-  width: 130px;
+  height: 25px;
+  width: 110px;
   background: linear-gradient(90deg, #cf024a 0%, hsl(339, 82%, 58%) 51%, #f38cae 100%);
   border: 2px solid #000000ad;
   border-radius: 6px;
@@ -55,7 +59,7 @@ body {
 
 .barrier .body {
   height: 150px;
-  width: 110px;
+  width: 90px;
   background: linear-gradient(90deg, #fb1463 0%, #f682aa 51%, #f9c9d9 100%);
   border-left: 2px solid #000000ad;
   border-right: 2px solid #000000ad;
@@ -67,8 +71,23 @@ body {
   color: #FFF;
   top: -10px;
   left: 10px;
-  font-family: Pixel;
-  font-size: 70px;
+  font-family: 'Gamer', Arial, Helvetica, sans-serif;
+  font-size: 60px;
   z-index: 100;
   text-shadow: 3px 3px 3px black;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 520px) {
+  [wm-flappy] {
+    height: 60vh;
+    margin-top: 11vh; 
+  }
+}
+@media (max-width: 420px) {
+  [wm-flappy] {
+    height: 50vh;
+    margin-top: 14vh; 
+  }
 }
