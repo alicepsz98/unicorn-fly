@@ -120,14 +120,6 @@ function FlappyBird() {
   gameArea.appendChild(progress.element);
   gameArea.appendChild(bird.element);
   barriers.couples.forEach((couple) => gameArea.appendChild(couple.element));
-  let velocity = 30;
-  function run() {
-    if(dots >= 10) velocity = 20
-    else if (dots >= 15) velocity = 15
-    else if (dots >= 20) velocity = 10
-    else if (dots >= 25) velocity = 7
-    else if (dots >= 30) velocity = 4
-  } 
   this.start = () => {
     const temporizador = setInterval(() => {
       barriers.animate();
@@ -135,10 +127,11 @@ function FlappyBird() {
       if (collided(bird, barriers)) {
         clearInterval(temporizador);
         alert(`Parabéns, você perdeu! 
+${dots} pontos.
 Jogar novamente?`);
         window.location.reload();
       }
-    }, velocity);
+    }, dots >= 10 ? 13 : 25);
   };
 }
 
