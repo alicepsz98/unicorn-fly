@@ -113,7 +113,7 @@ function FlappyBird() {
   const height = gameArea.clientHeight;
   const width = gameArea.clientWidth;
   const progress = new Progress();
-  const barriers = new Barriers(height, width, 157, 350, () =>
+  const barriers = new Barriers(height, width, 140, 350, () =>
     progress.updateDots(++dots)
   );
   const bird = new Bird(height);
@@ -131,7 +131,7 @@ ${dots} pontos.
 Jogar novamente?`);
         window.location.reload();
       }
-    }, dots >= 10 ? 13 : 25);
+    }, 15);
   };
 }
 
