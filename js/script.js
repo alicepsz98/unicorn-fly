@@ -64,7 +64,7 @@ function Bird(gameHeight) {
   window.ontouchstart = (e) => (flying = true);
   window.ontouchend = (e) => (flying = false);
   this.animate = () => {
-    const newY = this.getY() + (flying ? 3 : -3.7);
+    const newY = this.getY() + (flying ? 2.7 : -3.5);
     const heightMaxima = gameHeight - this.element.clientHeight;
     if (newY <= 0) {
       this.setY(0);
