@@ -15,10 +15,10 @@
 ---
 
 <p align="center">
-  <span>The Project</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <span>Technologies</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <span>How to use</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <span>Contribution</span>
+  <span>O projeto</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <span>Tecnologias</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <span>Como usar</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <span>Contribuição</span>
 </p>
 
 ---
@@ -27,19 +27,15 @@
 
 ---
 
-## 📝 The Project
+## 📝 O projeto
 
-Game application to train the use of DOM (JavaScript).
+Esta é um aplicativo de jogo para treinar o uso do DOM JavaScript.
 
 ---
 
-## 💻 Technologies
+## 💻 Tecnologias
 
-### Tools
-
-- Visual Studio Code
-
-### Languages
+### Linguagens
 
 - HTML
 - CSS
@@ -51,34 +47,34 @@ Game application to train the use of DOM (JavaScript).
 
 ---
 
-## 📦️ How to use
+## 📦️ Como usar  
 
-- To copy the project, use the commands:
+- Para copiar o projeto, use os comandos:
 
 ```bash
-  # Clone the repository
+  # Clonar o repositório
   ❯ git clone https://github.com/alicepsz98/unicorn-fly.git
 
-  # Enter directory
+  # Entrar no diretório
   ❯ cd unicorn-fly
 ```
 
 ---
 
-## 🤝 Contribution
+## 🤝 Contribuição
 
-1. `fork` this repository
-2. Create a branch with your feature:
+1. `fork` neste repositório
+2. Crie uma branch com sua feature:
    - `$ git checkout -b my_feature`
-3. Confirm your branch:
+3. Faça o commit:
    - `$ git commit -m "feature: my new feature"`
-4. Send your branch:
+4. Envie as atualizações:
    - `$ git push origin my_feature`
 
 ---
 
 <p align="center">
-  by Alice Souza 💚
+  por Alice Souza 💚
 </p>
 
  
